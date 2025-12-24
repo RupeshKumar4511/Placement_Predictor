@@ -23,3 +23,4 @@ def predict_output(data):
     scaler = load_scaler()
     x_new_scaled = scaler.transform(x_new)
     predict = model.predict(x_new_scaled)
+    return predict
